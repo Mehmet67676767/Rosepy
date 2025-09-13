@@ -52,20 +52,20 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-API_ID = int(os.environ.get("API_ID", "28121536"))
-API_HASH = os.environ.get("API_HASH", "57d552d05f2a76244291d9eb330294c2")
-BOT_TOKEN = os.environ.get("TOKEN", "7090522217:AAGhGJl78uuDhOaEnCrR5-jVokpqZ2a844g")  
+API_ID = int(os.environ.get("API_ID", "21194358"))
+API_HASH = os.environ.get("API_HASH", "9623f07eca023e4e3c561c966513a642")
+BOT_TOKEN = os.environ.get("TOKEN", "8333052060:AAHyfAg1xmvgbPhZb6povxmbBdStmDeCqzQ")  
 
 BOT_ID = int(os.environ.get("BOT_ID", "7090522217"))  
 
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "özelliklerim")  
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002182187594"))  
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "@ceydataggerbot")  
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002829291753"))  
 OWNER_ID = 5901320319  # Sahip hesabın id'si
 
 
 
 #-------------------------------------------------------------------------
-mongo_client = MongoClient("mongodb+srv://madpanel:madboy11@atlascluster.gprqayn.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster")
+mongo_client = MongoClient("mongodb+srv://Mehmetkurt:halilim123123@cluster0.rvh8b9r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = mongo_client["tagger_db"]
 blocked_collection = db["blocked"]   
 groups_collection = db["groups"]
@@ -102,8 +102,7 @@ def unblock_user(user_id):
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Ayaz ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# Başlanğıc Mesajı
-
+# Başand 
 @app.on_message(filters.command("start") & filters.private)
 async def start(bot: Client, message: Message):
     chat_id = message.chat.id
