@@ -1,31 +1,4 @@
-# -*- coding: utf-8 -*-
-
-__updated__ = "2024-07-21 13:41:39"
-
-# ~~~~~~~~~~~~~~~~~~~~~~~ RoseTagger ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-import os  # noqa: F401
-import asyncio
-import datetime
-import logging
-import random
-import shutil
-import string
-import time
-import traceback
-from typing import Tuple
-from typing import Union
-from random import shuffle
-import aiofiles
-
-from typing import List, Tuple, Union
-import requests
-from pymongo import MongoClient
-from pyrogram import Client, __version__, filters
-from pyrogram.enums import *
-from pyrogram.errors import (
-    FloodWait,
-    InputUserDeactivated,
-    PeerIdInvalid,
+,
     UserIsBlocked,
     UserNotParticipant,
 )
